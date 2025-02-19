@@ -2,7 +2,7 @@
   --color1: #706c96;
   --color2: #ffffff;
   --color3: #b3c8cf;
-  --color4: #bed7dc;
+  --color4: #4094a5;
   --color5: #312c5d;
   --color6: #16123c;
   --color7: #ded8d8;
@@ -48,8 +48,8 @@ h1 {
 .input-section p {
   text-align: center;
   line-height: 1.3rem;
-  font-size: 0.9rem;
   margin-top: 0px;
+  font-size: 0.9rem;
   justify-content: space-between;
 }
 
@@ -93,8 +93,7 @@ main {
   text-align: center;
   font-size: 1.3rem;
   font-weight: bold;
-  color: var(--color5);
-  background: rgba(255, 255, 255, 0.4);
+  color: var(--color4);
   padding: 5px 10px;
   border-radius: 5px;
   display: flex;

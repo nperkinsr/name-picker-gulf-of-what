@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const nameInput = document.getElementById("nameInput");
   const resultSpan = document.querySelector(".gulf-of span");
   const soundEffect = document.getElementById("tududum");
+  const rouletteSound = document.getElementById("roulette");
 
   pickNameButton.addEventListener("click", function () {
     let names = nameInput.value
@@ -18,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let shuffleTime = 4000;
     let intervalTime = 50;
     let elapsedTime = 0;
+
+    // Start the roulette sound
+    rouletteSound.play();
 
     const shuffleEffect = setInterval(() => {
       resultSpan.textContent = names[Math.floor(Math.random() * names.length)];
@@ -35,6 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const finalName = names[Math.floor(Math.random() * names.length)];
         resultSpan.textContent = finalName;
         soundEffect.play();
+
+        // Stop the roulette sound
+        rouletteSound.pause();
+        rouletteSound.currentTime = 0;
       }
     }, intervalTime);
   });
