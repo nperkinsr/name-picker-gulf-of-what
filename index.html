@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breaking News Picker</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>NAME PICKER: THE GULF OF...?</h1>
+    </header>
+
+    <main>
+      <section class="input-section">
+        <p>Since it has been a hot minute... Why don't we just pick a <b>new</b> name for the Gulf of Mexico?</p>
+        <textarea id="nameInput" placeholder="One name per line"></textarea>
+        <button id="pickNameButton" class="pickNameButton">Let's pick a name</button>
+      </section>
+
+      <section class="map-section">
+        <div class="map-container">
+          <div class="gulf-of">Gulf of <span>Mexico</span></div>
+          <img src="./assets/map.jpg" alt="Map" class="map" width="500px">
+        </div>
+      </section>
+    </main>
+
+    <!-- Sound Effect -->
+    <audio id="tududum" src="./assets/tada.mp3"></audio>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
