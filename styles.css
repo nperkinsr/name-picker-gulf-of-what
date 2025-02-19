@@ -47,7 +47,8 @@ h1 {
 
 .input-section p {
   text-align: center;
-  line-height: 1.2rem;
+  line-height: 1.3rem;
+  font-size: 0.9rem;
   margin-top: 0px;
   justify-content: space-between;
 }
