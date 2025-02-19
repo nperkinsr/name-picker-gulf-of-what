@@ -1,4 +1,4 @@
-# Name picker: The Guld of... what?
+# Name picker: The Gulf of... what?
 
 A name picker that replaces the word Mexico with a random name from the list
 
