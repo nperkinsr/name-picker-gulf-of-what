@@ -1,15 +1,15 @@
 :root {
-  --color1: #706c96;
+  --color1: #000000;
   --color2: #ffffff;
-  --color3: #b3c8cf;
-  --color4: #4094a5;
-  --color5: #312c5d;
-  --color6: #16123c;
+  --color3: #c6baba;
+  --color4: #d8260a;
+  --color5: #39374b;
+  --color6: #181727;
   --color7: #ded8d8;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   background-color: var(--color7);
   overflow: hidden;
-  color: var(--color2);
+  color: var(--color7);
 }
 
 .container {
@@ -25,55 +25,79 @@ body {
   flex-direction: column;
   border-radius: 9px;
   padding: 1rem;
-  background-color: var(--color1);
 }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-family: "Rubik Dirt", serif;
+  font-weight: 600;
   font-size: 2.5rem;
   line-height: 4rem;
   text-align: center;
   margin: 0;
-  padding-top: 1rem;
+  padding: 1rem;
+  color: var(--color3);
 }
 
 .input-section {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", serif;
   font-size: 1rem;
   text-align: center;
-  width: 170px;
+  width: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.5rem;
+  height: 440px;
+  margin: auto;
 }
 
 .input-section p {
   text-align: center;
   line-height: 1.3rem;
-  margin-top: 0px;
+  margin: 0;
   font-size: 0.9rem;
-  justify-content: space-between;
 }
 
 .input-section textarea {
-  height: 295px;
-  width: 150px;
+  font-family: "Roboto", serif;
+  height: 260px;
+  width: 135px;
   line-height: 1.5rem;
   text-align: center;
   padding: 10px;
   border: none;
+  background-color: var(--color5);
+  color: var(--color7);
+}
+
+textarea::placeholder {
+  color: var(--color2);
+  opacity: 1;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: none;
+}
+
+textarea:focus::placeholder {
+  color: transparent;
 }
 
 main {
   display: grid;
   grid-template-columns: 160px 500px;
   gap: 2rem;
-  padding: 2rem;
+  padding: 0 0 0 2rem;
+  background-color: var(--color6);
+  border-radius: 1rem;
 }
 
 .map-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
   position: relative;
 }
 
@@ -81,7 +105,7 @@ main {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 5px;
+  border-radius: 0 1rem 1rem 0;
 }
 
 /* Gulf of Mexico text */
@@ -93,7 +117,7 @@ main {
   text-align: center;
   font-size: 1.3rem;
   font-weight: bold;
-  color: var(--color4);
+  color: var(--color7);
   padding: 5px 10px;
   border-radius: 5px;
   display: flex;
@@ -103,16 +127,15 @@ main {
 .pickNameButton {
   padding: 20px 15px;
   border: none;
-  background-color: var(--color5);
+  background-color: var(--color4);
   color: var(--color2);
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 1.5rem;
   width: 100%;
   transition: background-color 0.3s ease, color 0.5s ease;
   text-align: center;
 }
 
 .pickNameButton:hover {
-  background-color: var(--color6);
+  background-color: var(--color1);
 }
