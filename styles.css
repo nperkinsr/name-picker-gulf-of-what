@@ -2,10 +2,10 @@
   --color1: #000000;
   --color2: #ffffff;
   --color3: #c6baba;
-  --color4: #d8260a;
-  --color5: #39374b;
+  --color4: #305083;
+  --color5: #4d4b65;
   --color6: #181727;
-  --color7: #ded8d8;
+  --color7: #e8e7f3;
 }
 
 body {
@@ -18,6 +18,18 @@ body {
   background-color: var(--color7);
   overflow: hidden;
   color: var(--color7);
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("./assets/waves.png") repeat;
+  opacity: 0.05;
+  z-index: -1;
 }
 
 .container {
@@ -43,27 +55,28 @@ h1 {
   font-family: "Roboto", serif;
   font-size: 1rem;
   text-align: center;
-  width: 155px;
+  width: 180px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 0.5rem;
-  height: 440px;
+  gap: 2rem;
+  height: 520px;
   margin: auto;
 }
 
 .input-section p {
   text-align: center;
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .input-section textarea {
   font-family: "Roboto", serif;
-  height: 260px;
-  width: 135px;
-  line-height: 1.5rem;
+  font-size: 1.2rem;
+  height: 340px;
+  width: 158px;
+  line-height: 1.9rem;
   text-align: center;
   padding: 10px;
   border: none;
@@ -72,8 +85,10 @@ h1 {
 }
 
 textarea::placeholder {
+  font-size: 0.9rem;
+  font-weight: 300;
   color: var(--color2);
-  opacity: 1;
+  opacity: 0.4;
 }
 
 textarea:focus {
@@ -87,7 +102,7 @@ textarea:focus::placeholder {
 
 main {
   display: grid;
-  grid-template-columns: 160px 500px;
+  grid-template-columns: 180px 600px;
   gap: 2rem;
   padding: 0 0 0 2rem;
   background-color: var(--color6);
@@ -116,7 +131,7 @@ main {
   left: 62%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: var(--color7);
   padding: 5px 10px;
@@ -138,5 +153,5 @@ main {
 }
 
 .pickNameButton:hover {
-  background-color: var(--color1);
+  background-color: var(--color3);
 }
