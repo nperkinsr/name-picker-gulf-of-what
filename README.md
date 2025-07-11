@@ -1,6 +1,8 @@
 # Name picker: The Gulf of... what?
 
-A name picker that replaces the word Mexico with a random name from the list
+**Name Picker: The Gulf of... what?** is a humorous twist on the classic name picker, created to practise selecting a random item from an array. Users input a list of names, then click a button to randomly choose one. But instead of a plain display, the selected name replaces the word Mexico on a map of the Gulf of Mexico, turning it into The Gulf of [Chosen Name].
+
+This satirical project was inspired by attempts to rewrite history (looking at you, "Gulf of America"), and adds a playful, absurd edge to a basic coding exercise. It’s a fun way to practice arrays, string replacement, and DOM manipulation.
 
 https://nperkinsr.github.io/name-picker-gulf-of-what
 
